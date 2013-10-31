@@ -1099,8 +1099,22 @@ try:
     input = input.replace("&", "&amp;")
     input = input.replace("&amp;#", "&#")
     
-    HEADER = """<?xml version="1.0" encoding="UTF-8"?>
-<survey name="Survey" alt="" autosave="1" extraVariables="source,list,url,record,ipAddress,userAgent,decLang" compat="114" builderCompatible="1" secure="0" state="testing" setup="time,term,quota,decLang" ss:disableBackButton="1" trackCheckbox="1" unique="">
+    HEADER = """
+<survey
+ name="Survey"
+ alt=""
+ autosave="1"
+ extraVariables="source,list,url,record,ipAddress,userAgent,decLang"
+ compat="117"
+ builderCompatible="1"
+ secure="0"
+ setup="time,term,quota,decLang"
+ ss:disableBackButton="1"
+ trackCheckbox="1"
+ mobile="compat"
+ mobileDevices="smartphone,tablet,featurephone,desktop"
+ state="testing"
+ unique="">
 
 <!-- IMPORTANT: Remember to copy the nstyles file from v2/cmb/temp-cmb to the current project directory -->
 
@@ -1135,8 +1149,23 @@ try:
     input = input.replace("&", "&amp;")
     input = input.replace("&amp;#", "&#")
     
-    HEADER = """<?xml version="1.0" encoding="UTF-8"?>
-<survey name="eBay Survey" alt="" autosave="1" extraVariables="source,list,url,record,ipAddress,userAgent,co,decLang" compat="114" builderCompatible="1" secure="0" state="testing" setup="time,term,quota,decLang" ss:disableBackButton="1" displayOnError="all" unique="" lang="english" otherLanguages="danish,german,finnish,french,norwegian,spanish,swedish,uk">
+    HEADER = """<survey
+ name="eBay Survey"
+ alt=""
+ autosave="1"
+ extraVariables="source,list,url,record,ipAddress,userAgent,co,decLang"
+ compat="114"
+ builderCompatible="1"
+ secure="0"
+ state="testing"
+ setup="time,term,quota,decLang"
+ ss:disableBackButton="1"
+ displayOnError="all"
+ unique=""
+ mobile="compat"
+ mobileDevices="smartphone,tablet,featurephone,desktop"
+ lang="english"
+ otherLanguages="danish,german,finnish,french,norwegian,spanish,swedish,uk">
 
 <res label="privacyText">Privacy Policy</res>
 <res label="helpText">Help</res>
@@ -1240,8 +1269,22 @@ try:
     input = input.replace("&", "&amp;")
     input = input.replace("&amp;#", "&#")
     
-    HEADER = """<?xml version="1.0" encoding="UTF-8"?>
-<survey name="Survey" alt="" autosave="0" extraVariables="source,list,url,record,ipAddress,userAgent,decLang" compat="114" builderCompatible="1" secure="0" state="testing" setup="time,term,quota,decLang" ss:disableBackButton="1" fwoe="text" ss:logoFile="fma/surveysonline_logo.gif" ss:logoPosition="left">
+    HEADER = """<survey
+ name="Survey"
+ alt=""
+ autosave="0"
+ extraVariables="source,list,url,record,ipAddress,userAgent,decLang"
+ compat="117"
+ builderCompatible="1"
+ secure="0"
+ state="testing"
+ setup="time,term,quota,decLang"
+ ss:disableBackButton="1"
+ fwoe="text"
+ mobile="compat"
+ mobileDevices="smartphone,tablet,featurephone,desktop"
+ ss:logoFile="fma/surveysonline_logo.gif"
+ ss:logoPosition="left">
 
 <samplesources default="0">
   <samplesource list="0" title="default">
@@ -1292,8 +1335,21 @@ try:
     input = input.replace("&", "&amp;")
     input = input.replace("&amp;#", "&#")
     
-    HEADER = """<?xml version="1.0" encoding="UTF-8"?>
-<survey name="Survey" alt="" autosave="0" extraVariables="source,list,url,record,ipAddress,userAgent,decLang" compat="114" builderCompatible="1" secure="0" state="testing" setup="time,term,quota,decLang" ss:disableBackButton="1" fixedWidth="tight" zeroPad="1">
+    HEADER = """<survey
+ name="Survey"
+ alt=""
+ autosave="0"
+ extraVariables="source,list,url,record,ipAddress,userAgent,decLang"
+ compat="114"
+ builderCompatible="1"
+ secure="0"
+ state="testing"
+ setup="time,term,quota,decLang"
+ ss:disableBackButton="1"
+ fixedWidth="tight"
+ mobile="compat"
+ mobileDevices="smartphone,tablet,featurephone,desktop"
+ zeroPad="1">
 
 <samplesources default="1">
   <samplesource list="1" title="Greenfield/Toluna">
@@ -1330,8 +1386,21 @@ try:
     input = input.replace("&", "&amp;")
     input = input.replace("&amp;#", "&#")
     
-    HEADER = """<?xml version="1.0" encoding="UTF-8"?>
-<survey name="Survey" alt="" autosave="0" extraVariables="source,list,url,record,ipAddress,userAgent,flashDetected,decLang" compat="114" builderCompatible="1" secure="0" state="testing" setup="time,term,quota,decLang" ss:disableBackButton="1" ss:colorScheme="theme_red-01" fixedWidth="tight">
+    HEADER = """<survey
+ name="Survey"
+ alt=""
+ autosave="0"
+ extraVariables="source,list,url,record,ipAddress,userAgent,flashDetected,decLang"
+ compat="114"
+ builderCompatible="1"
+ secure="0"
+ state="testing"
+ setup="time,term,quota,decLang"
+ mobile="compat"
+ mobileDevices="smartphone,tablet,featurephone,desktop"
+ ss:disableBackButton="1"
+ ss:colorScheme="theme_red-01"
+ fixedWidth="tight">
 
 <samplesources default="0">
   <samplesource list="0" title="default">
@@ -1364,8 +1433,22 @@ try:
     input = input.replace("&", "&amp;")
     input = input.replace("&amp;#", "&#")
     
-    HEADER = """<?xml version="1.0" encoding="UTF-8"?>
-<survey name="Survey" alt="" autosave="1" autosaveKey="ac" extraVariables="source,list,url,record,ipAddress,userAgent,flashDetected,ac,sn,lang,co,decLang" setup="time,term,quota,decLang" ss:disableBackButton="1" displayOnError="all" unique="" compat="114" builderCompatible="1" secure="0" state="testing">
+    HEADER = """<survey
+ name="Survey"
+ alt=""
+ autosave="1"
+ autosaveKey="ac"
+ extraVariables="source,list,url,record,ipAddress,userAgent,flashDetected,ac,sn,lang,co,decLang"
+ setup="time,term,quota,decLang"
+ ss:disableBackButton="1"
+ displayOnError="all"
+ unique=""
+ compat="114"
+ builderCompatible="1"
+ secure="0"
+ mobile="compat"
+ mobileDevices="smartphone,tablet,featurephone,desktop"
+ state="testing">
 
 <exec when="init">
 db_completed = Database( name="completed" )
