@@ -753,14 +753,28 @@ H="Add colWidth (set col width)"
 H="Add legendColWidth (set left/right legend)"
 ^!InsertText  ss:legendColWidth=""
 
-H="Add ATM Table Style"
-^!InsertText  ^P
-  <uses>atmtable.1</uses>
-^!InsertText  ^P
-
 H="Add ATM 1D Style"
 ^!InsertText  ^P
-  <uses>atm1d.2</uses>
+  <uses>atm1d.3</uses>
+  <atm1d:one_col>0</atm1d:one_col>
+^!InsertText  ^P
+
+H="Add ATM Rating Style"
+^!InsertText  ^P
+  <uses>atmrating.1</uses>
+  <atmrating:order>lth</atmrating:order>
+  <atmrating:legendPosition>Above</atmrating:legendPosition>
+  <atmrating:leftLegend></atmrating:leftLegend>
+  <atmrating:midLegend></atmrating:midLegend>
+  <atmrating:rightLegend></atmrating:rightLegend>
+  <atmrating:containerWidth>100%</atmrating:containerWidth>
+  <atmrating:OO_Text></atmrating:OO_Text>
+^!InsertText  ^P
+
+H="Add ATM Table Style"
+^!InsertText  ^P
+  <uses>atmtable.2</uses>
+  <atmtable:row_dividers>0</atmtable:row_dividers>
 ^!InsertText  ^P
 
 H="Add Autosum style"
@@ -772,49 +786,29 @@ H="Add Autosum style"
   <autosum:amount></autosum:amount>
 ^!InsertText ^P
 
-H="Add Cardsort Style"
+H="Add Brightcove Video Player style"
 ^!InsertText ^P
-  <uses>cardsort.2</uses>
-  <cardsort:buttonPreviousHTML><i class='fa-icon-chevron-left'></i> Prev</cardsort:buttonPreviousHTML>
-  <cardsort:buttonNextHTML>Next <i class='fa-icon-chevron-right'></i></cardsort:buttonNextHTML>
-  <cardsort:completionHTML><b>All done!</b><br/><i>Click the "Continue" button to proceed.</i></cardsort:completionHTML>
-^!InsertText ^P
-
-H="Add Fancyboxes"
-^!InsertText ^P
-  <uses>fancyboxes.1</uses>
-^!InsertText ^P
-
-H="Add FIR Image Replacement Style"
-^!InsertText ^P
-  <uses>fir.1</uses>
-  <fir:image_radio_css></fir:image_radio_css>
-  <fir:image_checkbox_css></fir:image_checkbox_css>
-^!InsertText ^P
-
-
-H="Add Image Map style"
-^!InsertText ^P
-<textarea label="Q1" optional="0" size="25">
+<checkbox label="Q1" atleast="1">
   <title>Title Text</title>
   <comment>Comment Text</comment>
-  <uses>imgmap.1</uses>
-  <imgmap:image>image.png</imgmap:image>
-  <imgmap:loading>Loading...</imgmap:loading>
-  <col label="c1">Like</col>
-  <col label="c2">Neutral</col>
-  <col label="c3">Dislike</col>
-  <noanswer label="na1">Prefer not to answer</noanswer>
-</textarea>
+  <uses>bcvideo.1</uses>
+  <bcvideo:video_id></bcvideo:video_id>
+  <bcvideo:width>640</bcvideo:width>
+  <bcvideo:height>360</bcvideo:height>
+  <bcvideo:pause_enable>0</bcvideo:pause_enable>
+  <bcvideo:replay_enable>0</bcvideo:replay_enable>
+  <bcvideo:autostart>0</bcvideo:autostart>
+  <bcvideo:autosubmit>0</bcvideo:autosubmit>
+  <bcvideo:allow_fullscreen>0</bcvideo:allow_fullscreen>
+  <bcvideo:chromeless_video>1</bcvideo:chromeless_video>
+  <bcvideo:watermark></bcvideo:watermark>
+  <bcvideo:watermark_position>Top Left</bcvideo:watermark_position>
+  <bcvideo:watermark_animated>0</bcvideo:watermark_animated>
+</checkbox>
 <suspend/>
 ^!InsertText ^P
 
-H="Add Left Right style (This or That)"
-^!InsertText ^P
-  <uses>leftright.1</uses>
-^!InsertText ^P
-
-H="Add Media Evaluator style"
+H="Add Brightcove Media Evaluator style"
 ^!InsertText ^P
 <textarea label="Q1" optional="0" size="25">
   <title>Title Text</title>
@@ -844,6 +838,53 @@ H="Add Media Evaluator style"
 <suspend/>
 ^!InsertText ^P
 
+H="Add Cardsort Style"
+^!InsertText ^P
+  <uses>cardsort.3</uses>
+  <cardsort:automaticAdvance>1</cardsort:automaticAdvance>
+  <cardsort:dragAndDrop>1</cardsort:dragAndDrop>
+  <cardsort:animationDuration>500</cardsort:animationDuration>
+  <cardsort:displayNavigation>1</cardsort:displayNavigation>
+  <cardsort:buttonPreviousHTML><i class='fa-icon-chevron-left'></i> Prev</cardsort:buttonPreviousHTML>
+  <cardsort:buttonNextHTML>Next <i class='fa-icon-chevron-right'></i></cardsort:buttonNextHTML>
+  <cardsort:displayProgress>1</cardsort:displayProgress>
+  <cardsort:displayCounter>1</cardsort:displayCounter>
+  <cardsort:completionHTML><b>All done!</b><br/><i>Click the "Continue" button to proceed.</i></cardsort:completionHTML>
+  <cardsort:wrapBuckets>1</cardsort:wrapBuckets>
+  <cardsort:bucketsPerRow>0</cardsort:bucketsPerRow>
+^!InsertText ^P
+
+H="Add Fancyboxes"
+^!InsertText ^P
+  <uses>fancyboxes.2</uses>
+^!InsertText ^P
+
+H="Add FIR Image Replacement Style"
+^!InsertText ^P
+  <uses>fir.2</uses>
+^!InsertText ^P
+
+H="Add Image Map style"
+^!InsertText ^P
+<textarea label="Q1" optional="0" size="25">
+  <title>Title Text</title>
+  <comment>Comment Text</comment>
+  <uses>imgmap.1</uses>
+  <imgmap:image>image.png</imgmap:image>
+  <imgmap:loading>Loading...</imgmap:loading>
+  <col label="c1">Like</col>
+  <col label="c2">Neutral</col>
+  <col label="c3">Dislike</col>
+  <noanswer label="na1">Prefer not to answer</noanswer>
+</textarea>
+<suspend/>
+^!InsertText ^P
+
+H="Add Left Right style (This or That)"
+^!InsertText ^P
+  <uses>leftright.1</uses>
+^!InsertText ^P
+
 H="Add Multicol style"
 ^!InsertText ^P
   <uses>multicol.2</uses>
@@ -853,31 +894,35 @@ H="Add Multicol style"
 
 H="Add One row at a time style"
 ^!InsertText ^P
-  <uses>onerowatatime.1</uses>
+  <uses>onerowatatime.2</uses>
 ^!InsertText ^P
 
-H="Add Rating Scale style"
+H="Add Quester ITB style"
 ^!InsertText ^P
-  <uses>ratingscale.1</uses>
-  <ratingscale:bubble_size>38</ratingscale:bubble_size>
-  <ratingscale:bubble_img>/survey/lib/steam/ratingscale/v1/ratingscale-both.png</ratingscale:bubble_img>
-  <ratingscale:hide_radio>0</ratingscale:hide_radio>
-  <ratingscale:radio_img_size>0</ratingscale:radio_img_size>
-  <ratingscale:radio_img>/survey/lib/steam/ratingscale/v1/ratingscale-empty.png</ratingscale:radio_img>
-  <ratingscale:radio_selected_img></ratingscale:radio_selected_img>
+<textarea label="Q1" optional="0" size="25">
+  <title>Title Text</title>
+  <comment>Comment Text</comment>
+  <uses>quester.1</uses>
+  <quester:projectid>Request From Quester</quester:projectid>
+  <quester:externalid>${uuid}</quester:externalid>
+  <quester:debrand>1</quester:debrand>
+  <row label="r1">Status</row>
+  <row label="r2">Respondent ID</row>
+  <row label="r3">Conversation</row>
+</textarea>
+<suspend/>
 ^!InsertText ^P
 
 H="Add Rank Sort style"
 ^!InsertText ^P
-  <uses>ranksort.1</uses>
+  <uses>ranksort.2</uses>
   <ranksort:showBucketText>1</ranksort:showBucketText>
   <ranksort:showBucketNumber>1</ranksort:showBucketNumber>
 ^!InsertText ^P
 
-H="Add Starrating style"
+H="Add Rating Scale style"
 ^!InsertText ^P
-  <uses>starrating.1</uses>
-  <starrating:tooltips>1</starrating:tooltips>
+  <uses>ratingscale.2</uses>
 ^!InsertText ^P
 
 H="Add Separator Style"
@@ -888,9 +933,28 @@ H="Add Separator Style"
   <separator:color></separator:color>
 ^!InsertText ^P
 
-H="Add Slider style"
+H="Add Slider Decimal/Negative style"
 ^!InsertText ^P
-  <uses>slidernumber.2</uses>
+  <uses>sliderdecimal.1</uses>
+  <sliderdecimal:sliderPosition>Off Scale</sliderdecimal:sliderPosition>
+  <sliderdecimal:step>.1</sliderdecimal:step>
+  <sliderdecimal:decimalPlaces>2</sliderdecimal:decimalPlaces>
+  <sliderdecimal:legendPosition>Below Slider</sliderdecimal:legendPosition>
+  <sliderdecimal:leftLegend></sliderdecimal:leftLegend>
+  <sliderdecimal:midLegend></sliderdecimal:midLegend>
+  <sliderdecimal:rightLegend></sliderdecimal:rightLegend>
+  <sliderdecimal:showValue>Above Slider</sliderdecimal:showValue>
+  <sliderdecimal:preText></sliderdecimal:preText>
+  <sliderdecimal:postText></sliderdecimal:postText>
+  <sliderdecimal:editable>1</sliderdecimal:editable>
+  <sliderdecimal:showRange>1</sliderdecimal:showRange>
+  <sliderdecimal:sliderWidth>75%</sliderdecimal:sliderWidth>
+  <sliderdecimal:OO_Text></sliderdecimal:OO_Text>
+^!InsertText ^P
+
+H="Add Slider Number style"
+^!InsertText ^P
+  <uses>slidernumber.3</uses>
   <slidernumber:sliderPosition>Off Scale</slidernumber:sliderPosition>
   <slidernumber:step>1</slidernumber:step>
   <slidernumber:legendPosition>Below Slider</slidernumber:legendPosition>
@@ -904,6 +968,12 @@ H="Add Slider style"
   <slidernumber:showRange>1</slidernumber:showRange>
   <slidernumber:OO_Text></slidernumber:OO_Text>
   <slidernumber:offScaleText></slidernumber:offScaleText>
+^!InsertText ^P
+
+H="Add Starrating style"
+^!InsertText ^P
+  <uses>starrating.2</uses>
+  <starrating:tooltips>1</starrating:tooltips>
 ^!InsertText ^P
 
 H="Add Text Highlighter style"
@@ -928,26 +998,19 @@ H="Add Text Highlighter style"
 <suspend/>
 ^!InsertText ^P
 
-H="Add Video Player style"
+H="Add Video Embed style"
 ^!InsertText ^P
-<checkbox label="Q1" atleast="1">
+<number label="Q1" size="3" optional="0">
   <title>Title Text</title>
   <comment>Comment Text</comment>
-  <uses>bcvideo.1</uses>
-  <bcvideo:video_id></bcvideo:video_id>
-  <bcvideo:width>640</bcvideo:width>
-  <bcvideo:height>360</bcvideo:height>
-  <bcvideo:pause_enable>0</bcvideo:pause_enable>
-  <bcvideo:replay_enable>0</bcvideo:replay_enable>
-  <bcvideo:autostart>0</bcvideo:autostart>
-  <bcvideo:autosubmit>0</bcvideo:autosubmit>
-  <bcvideo:allow_fullscreen>0</bcvideo:allow_fullscreen>
-  <bcvideo:chromeless_video>1</bcvideo:chromeless_video>
-  <bcvideo:watermark></bcvideo:watermark>
-  <bcvideo:watermark_position>Top Left</bcvideo:watermark_position>
-  <bcvideo:watermark_animated>0</bcvideo:watermark_animated>
-</checkbox>
-<suspend/>
+  <uses>videoembed.1</uses>
+  <videoembed:embed>
+    <![CDATA[
+      <iframe src="//player.vimeo.com/video/77506709" width="500" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    ]]>
+  </videoembed:embed>
+  <videoembed:mustWatch>1</videoembed:mustWatch>
+</number>
 ^!InsertText ^P
 
 
