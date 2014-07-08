@@ -3997,10 +3997,10 @@ try:
 
     #COMPOSE OUR QUESTION
     if "<comment>" not in input:
-        comment = "<comment>Please be as specific as possible</comment>\n"
-        print "<text label=\"%s\" size=\"40\" optional=\"0\">\n  <title>%s</title>\n  %s  %s</text>\n<suspend/>" % (label.strip(), title.strip(), comment, output)
+        comment = "<comment>Please be as specific as possible</comment>"
+        print "<text label=\"%s\" size=\"40\" optional=\"0\">\n  <title>%s</title>\n  %s\n%s</text>\n<suspend/>" % (label.strip(), title.strip(), comment, output)
     else:
-        print "<text label=\"%s\" size=\"40\" optional=\"0\">\n  <title>%s</title>\n  %s</text>\n<suspend/>" % (label.strip(), title.strip(), output)
+        print "<text label=\"%s\" size=\"40\" optional=\"0\">\n  <title>%s</title>\n%s</text>\n<suspend/>" % (label.strip(), title.strip(), output)
     
 except Exception, e:
     print e
