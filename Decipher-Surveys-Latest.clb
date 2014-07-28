@@ -1121,7 +1121,7 @@ try:
  alt=""
  autosave="0"
  extraVariables="source,list,url,record,ipAddress,userAgent,decLang"
- compat="117"
+ compat="124"
  builderCompatible="1"
  secure="0"
  setup="time,term,quota,decLang"
