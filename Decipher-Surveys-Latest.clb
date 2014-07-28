@@ -761,7 +761,7 @@ H="Add ATM 1D Style"
 
 H="Add ATM Rating Style"
 ^!InsertText  ^P
-  <uses>atmrating.1</uses>
+  <uses>atmrating.2</uses>
   <atmrating:order>lth</atmrating:order>
   <atmrating:legendPosition>Above</atmrating:legendPosition>
   <atmrating:leftLegend></atmrating:leftLegend>
@@ -773,13 +773,13 @@ H="Add ATM Rating Style"
 
 H="Add ATM Table Style"
 ^!InsertText  ^P
-  <uses>atmtable.2</uses>
+  <uses>atmtable.3</uses>
   <atmtable:row_dividers>0</atmtable:row_dividers>
 ^!InsertText  ^P
 
 H="Add Autosum style"
 ^!InsertText ^P
-  <uses>autosum.1</uses>
+  <uses>autosum.2</uses>
   <autosum:preText></autosum:preText>
   <autosum:postText></autosum:postText>
   <autosum:sumPreText>Total:</autosum:sumPreText>
@@ -791,7 +791,7 @@ H="Add Brightcove Video Player style"
 <checkbox label="Q1" atleast="1">
   <title>Title Text</title>
   <comment>Comment Text</comment>
-  <uses>bcvideo.1</uses>
+  <uses>bcvideo.2</uses>
   <bcvideo:video_id></bcvideo:video_id>
   <bcvideo:width>640</bcvideo:width>
   <bcvideo:height>360</bcvideo:height>
@@ -813,7 +813,7 @@ H="Add Brightcove Media Evaluator style"
 <textarea label="Q1" optional="0" size="25">
   <title>Title Text</title>
   <comment>Comment Text</comment>
-  <uses>bcme.1</uses>
+  <uses>bcme.3</uses>
   <bcme:video_id></bcme:video_id>
   <bcme:width>640</bcme:width>
   <bcme:height>360</bcme:height>
@@ -840,7 +840,7 @@ H="Add Brightcove Media Evaluator style"
 
 H="Add Cardsort Style"
 ^!InsertText ^P
-  <uses>cardsort.3</uses>
+  <uses>cardsort.4</uses>
   <cardsort:automaticAdvance>1</cardsort:automaticAdvance>
   <cardsort:dragAndDrop>1</cardsort:dragAndDrop>
   <cardsort:animationDuration>500</cardsort:animationDuration>
@@ -869,7 +869,7 @@ H="Add Image Map style"
 <textarea label="Q1" optional="0" size="25">
   <title>Title Text</title>
   <comment>Comment Text</comment>
-  <uses>imgmap.1</uses>
+  <uses>imgmap.2</uses>
   <imgmap:image>image.png</imgmap:image>
   <imgmap:loading>Loading...</imgmap:loading>
   <col label="c1">Like</col>
@@ -895,6 +895,30 @@ H="Add Multicol style"
 H="Add One row at a time style"
 ^!InsertText ^P
   <uses>onerowatatime.2</uses>
+^!InsertText ^P
+
+H="Add Page Turner style"
+^!InsertText ^P
+<number label="Q1" size="5" optional="1">
+  <uses>pageturner.2</uses>
+  <pageturner:width>780</pageturner:width>
+  <pageturner:height>550</pageturner:height>
+  <pageturner:requiredPagesViewed>0</pageturner:requiredPagesViewed>
+  <pageturner:display>both</pageturner:display>
+  <pageturner:shadow>0</pageturner:shadow>
+  <pageturner:peel>none</pageturner:peel>
+  <pageturner:navigationPosition>bottom</pageturner:navigationPosition>
+  <pageturner:buttonBack>Previous Page</pageturner:buttonBack>
+  <pageturner:buttonLeft>Enlarge Left</pageturner:buttonLeft>
+  <pageturner:buttonRight>Enlarge Rightt</pageturner:buttonRight>
+  <pageturner:buttonNext>Next Page</pageturner:buttonNext>
+  <title>Below is a magazine.  Please flip through it to view.</title>
+  <row label="r1"><img src="[rel image1.png]"/></row>
+  <row label="r2"><img src="[rel image2.png]"/></row>
+  <col label="c1">Timer (seconds)</col>
+  <col label="c2">View Count</col>
+</number>
+<suspend/>
 ^!InsertText ^P
 
 H="Add Quester ITB style"
@@ -935,7 +959,7 @@ H="Add Separator Style"
 
 H="Add Slider Decimal/Negative style"
 ^!InsertText ^P
-  <uses>sliderdecimal.1</uses>
+  <uses>sliderdecimal.2</uses>
   <sliderdecimal:sliderPosition>Off Scale</sliderdecimal:sliderPosition>
   <sliderdecimal:step>.1</sliderdecimal:step>
   <sliderdecimal:decimalPlaces>2</sliderdecimal:decimalPlaces>
@@ -954,7 +978,7 @@ H="Add Slider Decimal/Negative style"
 
 H="Add Slider Number style"
 ^!InsertText ^P
-  <uses>slidernumber.3</uses>
+  <uses>slidernumber.4</uses>
   <slidernumber:sliderPosition>Off Scale</slidernumber:sliderPosition>
   <slidernumber:step>1</slidernumber:step>
   <slidernumber:legendPosition>Below Slider</slidernumber:legendPosition>
