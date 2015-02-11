@@ -1141,31 +1141,32 @@ try:
     input = input.replace("&amp;#", "&#")
     
     HEADER = """<survey
- name="Survey"
  alt=""
  autosave="0"
- extraVariables="source,list,url,record,ipAddress,userAgent,decLang"
- compat="126"
- builderCompatible="1"
- secure="0"
- setup="time,term,quota,decLang"
- ss:disableBackButton="1"
- unique=""
+ compat="127"
+ extraVariables="source,record,ipAddress,decLang,list,userAgent"
+ fir="on"
  mobile="compat"
  mobileDevices="smartphone,tablet,featurephone,desktop"
+ name="Survey"
+ setup="time,term,quota,decLang"
+ ss:disableBackButton="1"
+ ss:hideProgressBar="0"
+ ss:listDisplay="1"
+ ss:logoFile=""
+ ss:logoPosition=""
+ unique=""
  state="testing">
 
 <samplesources default="0">
-  <samplesource list="0" title="default">
-    <exit cond="qualified"><b>Thanks again for completing the survey!<br/><br/>Your feedback and quick response to this survey are greatly appreciated.</b></exit>
-    <exit cond="terminated"><b>Thank you for your input!</b></exit>
-    <exit cond="overquota"><b>Thank you for your input!</b></exit>
+  <samplesource list="0" title="">
+    <exit cond="qualified">Thank you for taking our survey. Your efforts are greatly appreciated!</exit>
+    <exit cond="terminated">Thank you for taking our survey.</exit>
+    <exit cond="overquota">Thank you for taking our survey.</exit>
   </samplesource>
 </samplesources>"""
     
-    FOOTER = """<marker name="qualified"/>
-
-</survey>"""
+    FOOTER = """</survey>"""
     
     print "%s\n\n%s\n\n%s" % (HEADER, input, FOOTER)
     
