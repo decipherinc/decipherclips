@@ -2364,8 +2364,8 @@ try:
           else:
             extra = ''
 
-            print "  <col label=\"c%s\"%s>%s</col>" % (str(count+1), extra, input[count].strip())
-            count += 1
+          print "  <col label=\"c%s\"%s>%s</col>" % (str(count+1), extra, input[count].strip())
+          count += 1
 except Exception, e:
         print e
     
